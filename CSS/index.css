@@ -146,8 +146,8 @@ tr
     text-align: center;
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 100;
-    font-size: larger;
+    font-weight: 900;
+    font-size: x-large;
 }
 
 @media only screen and (max-width: 450px) and (min-width: 200px)
