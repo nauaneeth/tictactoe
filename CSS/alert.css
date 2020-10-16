@@ -1,0 +1,43 @@
+#alert
+{
+    position: fixed;
+    display: block;
+    border-radius: 10px;
+    width: 200px;
+    height: 150px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.863);
+    color: white;
+    text-align: center;
+
+}
+
+#alert p
+{
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    text-align: center;
+}
+
+#alertcont
+{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.103);
+    backdrop-filter: blur(10px);
+    display: none;
+}
+
+.clo
+{
+    float: right;
+    padding: 20px;
+}

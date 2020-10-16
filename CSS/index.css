@@ -1,0 +1,225 @@
+html, body
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color:  #02140f;
+}
+
+@keyframes boxei
+{
+    0%{padding-top: 100vh;}
+    90%{margin-top: -10px; padding-top: 0px;}
+    100%{padding-top: 0px;}
+}
+
+@keyframes sizei
+{
+    0%{width: 100px;height: 100px;}
+    90%{width: 400px; height: 400px;}
+    100%{width: 400px; height: 400px;}
+}
+
+.ticont
+{
+    background-image: url("../images/bag.jpg");   
+    background-size: cover;
+    background-repeat: no-repeat;
+    top:0;
+    left:0;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    animation: boxei 2s;
+
+}
+
+.tic
+{
+    background: linear-gradient(#9dc88db4,#4d774ebe);
+    display: inline-block;
+    text-align: center;
+    border-radius: 20px;
+    position: relative;
+    border: black;
+    /*border: 10px solid ;*/
+    top: 50%;
+    transform: translate(0,-50%);
+    box-shadow: 10px 10px 100px rgb(0, 0, 0);
+    animation: sizei 3s;
+}
+
+table,td,tr{
+    table-layout: fixed;
+}
+
+table
+{
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    border: 0px;
+}
+
+.ele
+{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+td
+{
+    position: relative;
+}
+
+.lines1
+{
+    background-color:  #02140fc9;
+    display: block;
+    width: 3.5%;
+    height: 100%;
+    position: absolute;
+    left: 33.33%;
+    transform: translate(-50%,0);
+}
+
+.lines2
+{
+    background-color: #02140fc9;
+    display: block;
+    width: 3.5%;
+    height: 100%;
+    position: absolute;
+    right: 33.33%;
+    transform: translate(+50%,0);
+}
+
+.lines3
+{
+    background-color: #02140fc9;
+    display: block;
+    height: 3.5%;
+    width: 100%;
+    position: absolute;
+    top: 33.33%;
+    transform: translate(0,-50%);
+}
+
+.lines4
+{
+    background-color: #02140fc9;
+    display: block;
+    height: 3.5%;
+    width: 100%;
+    position: absolute;
+    bottom: 33.33%;
+    transform: translate(0,+50%);
+}
+
+.ticont h1
+{
+    position: fixed;
+    left: 50vw;
+    transform: translate(-50%,0);
+    top: 5vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+    background-color: #02140fc9;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+tr
+{
+    text-align: center;
+}
+
+.ele
+{
+    text-align: center;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    font-size: larger;
+}
+
+@media only screen and (max-width: 450px) and (min-width: 200px)
+{
+    table
+    {
+        width: 80vw;
+        height: 80vw;
+    }
+    @keyframes sizei
+    {
+        0%{width: 20vw;height: 20vw;}
+        90%{width: 80vw; height: 80vw;}
+        100%{width: 80vw; height: 80vw;}
+    }
+}
+
+@media only screen and (max-width: 200px)
+{
+    table
+    {
+        width: 60vw;
+        height: 60vw;
+    }
+    @keyframes sizei
+    {
+        0%{width: 15vw;height: 15vw;}
+        90%{width: 60vw; height: 60vw;}
+        100%{width: 60vw; height: 60vw;}
+    }
+    .ticont h1
+    {
+        position: fixed;
+        left: 50vw;
+        transform: translate(-50%,0);
+        top: 1vh;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #fff;
+        background-color: #02140fc9;
+        padding: 5px;
+        border-radius: 3px;
+    }
+}
+
+@media only screen and (max-height: 550px)
+{
+    table
+    {
+        width: 60vw;
+        height: 60vw;
+    }
+    @keyframes sizei
+    {
+        0%{width: 15vw;height: 15vw;}
+        90%{width: 60vw; height: 60vw;}
+        100%{width: 60vw; height: 60vw;}
+    }
+    .ticont h1
+    {
+        position: fixed;
+        left: 50vw;
+        transform: translate(-50%,0);
+        top: 1vh;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #fff;
+        background-color: #02140fc9;
+        padding: 5px;
+        border-radius: 3px;
+    }
+}
+
+
+
+
+

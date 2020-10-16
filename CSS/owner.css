@@ -1,0 +1,71 @@
+@keyframes oner
+{
+    0% {color: rgba(189, 41, 41, 0);}
+    50%{color: rgba(255, 255, 255, 0);}
+    100% {color:  rgba(255, 255, 255, 0.849);;}
+}
+
+.owner
+{
+    color: white;
+    position: absolute;
+    top: 90vh;
+    left: 50vw;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.owner2
+{
+    color: white;
+    position: absolute;
+    top: 80vh;
+    left: 50vw;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.wone:link
+{
+    animation: oner 6s;
+    font-family: 'Roboto Mono', monospace;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.849);
+}
+
+.wone:visited
+{
+    font-family: 'Roboto Mono', monospace;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.849);
+
+}
+
+.wone:hover
+{
+    font-family: 'Roboto Mono', monospace;
+    text-decoration: none;
+    color: white;
+}
+
+.wone:active
+{
+    font-family: 'Roboto Mono', monospace;
+    text-decoration: none;
+    color: white;
+}
+
+@media only screen and (max-height:350px)
+{
+    .owner
+    {
+        animation: oner 6s;
+        color: white;
+        position: absolute;
+        top: 320px;
+        left: 50vw;
+        transform: translate(-50%,-50%);
+        text-align: center;
+    }
+
+}

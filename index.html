@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/alert.css">
+    <link rel="stylesheet" href="CSS/owner.css">
+    <script src="index.js"></script>
+</head>
+<body onload="scrollme();">
+    <div class="ticont">
+        <h1 id="who">Player One's Turn</h1>
+        <div class="tic">
+            <div class="lines1"></div>
+            <div class="lines2"></div>
+            <div class="lines3"></div>
+            <div class="lines4"></div>
+            <table>
+                <tr>
+                    <td onclick="changep(1);"><div class="ele"> </div></td>
+                    <td onclick="changep(2);"><div class="ele"> </div></td>
+                    <td onclick="changep(3);"><div class="ele"> </div></td>
+                </tr>
+                <tr>
+                    <td onclick="changep(4);"><div class="ele"> </div></td>
+                    <td onclick="changep(5);"><div class="ele"> </div></td>
+                    <td onclick="changep(6);"><div class="ele"> </div></td>
+                </tr>
+                <tr>
+                    <td onclick="changep(7);"><div class="ele"> </div></td>
+                    <td onclick="changep(8);"><div class="ele"> </div></td>
+                    <td onclick="changep(9);"><div class="ele"> </div></td>
+                </tr>
+            </table>
+        </div>
+        <div class="owner">
+            <a class="wone" href="https://nauaneeth.github.io">View More<br>from Navaneeth</a>
+        </div>
+        <div class="owner2">
+            <a class="wone" href="https://github.com/nauaneeth/colour-randomizer"><br>View Code</a>
+        </div>
+    </div>
+    <div id="alertcont">
+        <div id="alert">
+            <div class="clo" onclick="closeme();">&times;</div>
+            <p id="t">Winner: Player One</p>
+        </div>
+    </div>    
+</body>
+</html>
