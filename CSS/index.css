@@ -28,7 +28,7 @@ body
 
 .ticont
 {
-    background-image: url("../images/bag.jpg");   
+    background-image: url("../images/bag.png");   
     background-size: cover;
     background-repeat: no-repeat;
     top:0;
@@ -165,6 +165,22 @@ tr
     }
 }
 
+@media only screen and (max-height: 450px) and (min-height: 200px) and (max-width: 800px)
+{
+    table
+    {
+        width: 40vh;
+        height: 40vh;
+    }
+    @keyframes sizei
+    {
+        0%{width: 20vw;height: 20vw;}
+        90%{width: 40vh; height: 40vh;}
+        100%{width: 40vh; height: 40vh;}
+    }
+}
+
+
 @media only screen and (max-width: 200px)
 {
     table
@@ -192,7 +208,7 @@ tr
     }
 }
 
-@media only screen and (max-height: 550px)
+/*@media only screen and (max-height: 550px)
 {
     table
     {
@@ -217,7 +233,7 @@ tr
         padding: 5px;
         border-radius: 3px;
     }
-}
+}*/
 
 
 
